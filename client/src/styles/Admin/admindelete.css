@@ -1,0 +1,592 @@
+.admin-delete .sidebar {
+    position: fixed;
+    height: 100%;
+    width: 240px;
+    background: #5372F0;
+    transition: all 0.5s ease;
+  }
+  
+  .admin-delete .sidebar.active {
+    width: 60px;
+  }
+  
+  .admin-delete .sidebar .logo-details {
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .admin-delete .sidebar .logo-details i {
+    font-size: 40px;
+    font-weight: 500;
+    min-width: 60px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .admin-delete .sidebar .logo-details .logo_name {
+    padding-top: 15px;
+    padding-left: 20px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+  }
+  
+  .admin-delete .sidebar .nav-links {
+    margin-top: 10px;
+  }
+  
+  .admin-delete .sidebar .nav-links li {
+    position: relative;
+    list-style: none;
+    height: 50px;
+  }
+  
+  .admin-delete .sidebar .nav-links li a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+  }
+  
+  .admin-delete .sidebar .nav-links li a.active {
+    background: #081D45;
+  }
+  
+  .admin-delete .sidebar .nav-links li a:hover {
+    background: #081D45;
+  }
+  
+  .admin-delete .sidebar .nav-links li i {
+    min-width: 60px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+  }
+  
+  .admin-delete .sidebar .nav-links li a .links_name {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    white-space: nowrap;
+  }
+  
+  .admin-delete .sidebar .nav-links .log_out {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  .admin-delete .home-section {
+    position: relative;
+    background: #f5f5f5;
+    min-height: 100vh;
+    width: calc(100% - 240px);
+    left: 240px;
+    transition: all 0.5s ease;
+  }
+  
+  .admin-delete .sidebar.active ~ .home-section {
+    width: calc(100% - 60px);
+    left: 60px;
+  }
+  
+  .admin-delete .home-section nav {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: calc(100% - 240px);
+    left: 240px;
+    z-index: 100;
+    padding: 0 20px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+  }
+  
+  .admin-delete .sidebar.active ~ .home-section nav {
+    left: 60px;
+    width: calc(100% - 60px);
+  }
+  
+  .admin-delete .home-section nav .sidebar-button {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  .admin-delete nav .sidebar-button i {
+    font-size: 35px;
+    margin-right: 10px;
+  }
+  
+  .admin-delete .home-section nav .search-box {
+    position: relative;
+    height: 50px;
+    max-width: 550px;
+    width: 100%;
+    margin: 0 20px;
+  }
+  
+  .admin-delete nav .search-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    background: #F5F6FA;
+    border: 2px solid #EFEEF1;
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 0 15px;
+  }
+  
+  .admin-delete nav .search-box .bx-search {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background: #2697FF;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 4px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    transition: all 0.4 ease;
+  }
+  
+  .admin-delete .home-section nav .profile-details {
+    display: flex;
+    align-items: center;
+    background: #F5F6FA;
+    border: 2px solid #EFEEF1;
+    border-radius: 6px;
+    height: 50px;
+    min-width: 190px;
+    padding: 0 15px 0 2px;
+  }
+  
+  .admin-delete nav .profile-details img {
+    height: 40px;
+    width: 40px;
+    border-radius: 6px;
+    object-fit: cover;
+  }
+  
+  .admin-delete nav .profile-details .admin_name {
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+    margin: 0 10px;
+    white-space: nowrap;
+  }
+  
+  .admin-delete nav .profile-details i {
+    font-size: 25px;
+    color: #333;
+  }
+  
+  .admin-delete .home-section .home-content {
+    position: relative;
+    padding-top: 104px;
+  }
+  
+  .admin-delete .home-content .overview-boxes {
+    display: flex;
+    align-items: center;
+    justify-content: space between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    margin-bottom: 26px;
+  }
+  
+  .admin-delete .overview-boxes .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 4 - 15px);
+    background: #fff;
+    padding: 15px 14px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admin-delete .overview-boxes .box-topic {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .admin-delete .home-content .box .number {
+    display: inline-block;
+    font-size: 35px;
+    margin-top: -6px;
+    font-weight: 500;
+  }
+  
+  .admin-delete .home-content .box .indicator {
+    display: flex;
+    align-items: center;
+  }
+  
+  .admin-delete .home-content .box .indicator i {
+    height: 20px;
+    width: 20px;
+    background: #8FDACB;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    margin-right: 5px;
+  }
+  
+  .admin-delete .box .indicator i.down {
+    background: #e87d88;
+  }
+  .admin-delete .home-content .box .indicator .text {
+    font-size: 12px;
+  }
+  
+  .admin-delete .home-content .box .cart {
+    display: inline-block;
+    font-size: 32px;
+    height: 50px;
+    width: 50px;
+    background: #cce5ff;
+    line-height: 50px;
+    text-align: center;
+    color: #66b0ff;
+    border-radius: 12px;
+    margin: -15px 0 0 6px;
+  }
+  
+  .admin-delete .home-content .box .cart.two {
+    color: #2BD47D;
+    background: #C0F2D8;
+  }
+  
+  .admin-delete .home-content .box .cart.three {
+    color: #ffc233;
+    background: #ffe8b3;
+  }
+  
+  .admin-delete .home-content .box .cart.four {
+    color: #e05260;
+    background: #f7d4d7;
+  }
+  
+  .admin-delete .home-content .total-order {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .admin-delete .home-content .sales-boxes {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 0 20px; */
+  }
+  
+  /* left box */
+  .admin-delete .home-content .sales-boxes .recent-sales {
+    width: 65%;
+    background: #fff;
+    padding: 20px 20px;
+    margin: 0 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admin-delete .home-content .sales-boxes .sales-details .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space between;
+  }
+  
+  .admin-delete .home-content .sales-boxes .sales-details .details {
+    display: flex;
+    align-items: center;
+    justify-content: space between;
+  }
+  
+  .admin-delete .sales-boxes .box .title {
+    font-size: 24px;
+    font-weight: 500;
+    /* margin-bottom: 10px; */
+  }
+  
+  .admin-delete .sales-boxes .sales-details li.topic {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .admin-delete .sales-boxes .sales-details li {
+    list-style: none;
+    width: 22%;
+    margin: 8px 0;
+  }
+  
+  .admin-delete .sales-boxes .sales-details li a {
+    font-size: 18px;
+    color: #333;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  
+  .admin-delete .sales-boxes .sales-details .date {
+    width: 40%;
+  }
+  
+  .admin-delete .sales-boxes .customer {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .admin-delete .sales-boxes .box .button {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .admin-delete .sales-boxes .box .button a {
+    color: #fff;
+    background: #0A2558;
+    padding: 4px 12px;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .admin-delete .sales-boxes .box .button a:hover {
+    background: #0d3073;
+  }
+  
+  /* Right box */
+  .admin-delete .home-content .sales-boxes .top-sales {
+    width: 35%;
+    background: #fff;
+    padding: 20px 30px;
+    margin: 0 20px 0 0;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admin-delete .sales-boxes .top-sales li {
+    display: flex;
+    align-items: center;
+    justify-content: space between;
+    margin: 10px 0;
+  }
+  
+  .admin-delete .sales-boxes .top-sales li a img {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-right: 10px;
+    background: #333;
+  }
+  
+  .admin-delete .sales-boxes .top-sales li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .admin-delete .sales-boxes .top-sales li .product,
+  .price {
+    font-size: 17px;
+    font-weight: 400;
+    color: #333;
+  }
+  
+  .admin-delete .product-card .logo-cart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .admin-delete .product-card .logo-cart img {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+  }
+  
+  .admin-delete .product-card .logo-cart i {
+    font-size: 27px;
+    color: #707070;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .admin-delete .product-card .logo-cart i:hover {
+    color: #333;
+  }
+  
+  .admin-delete .product-card .main-images {
+    position: relative;
+    height: 210px;
+  }
+  
+  .admin-delete .product-card .main-images img {
+    position: absolute;
+    height: 230px;
+    width: 280px;
+    border-radius: 20px;
+    object-fit: cover;
+    top: -20px;
+    left: -10px;
+    z-index: -1;
+    transition: opacity 0.5s ease;
+  }
+  
+  .admin-delete .product-card .main-images img.active {
+    opacity: 1;
+  }
+  
+  .admin-delete .product-card .shoe-details .shoe_name {
+    font-size: 24px;
+    font-weight: 500;
+    color: #161616;
+    margin-top: 10px;
+  }
+  
+  .admin-delete .product-card .shoe-details p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+    text-align: justify;
+  }
+  
+  .admin-delete .product-card .shoe-details .stars i {
+    margin: 0 -1px;
+    color: #333;
+  }
+  
+  .admin-delete .product-card .color-price .color-option {
+    display: flex;
+    align-items: center;
+  }
+  
+  .admin-delete .color-price {
+    display: flex;
+    justify: space-between;
+    align-items: center;
+    margin-top: 2px;
+  }
+  
+  .admin-delete .color-price .color-option .color {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin-right: 8px;
+  }
+  
+  .admin-delete .color-option .circles {
+    display: flex;
+  }
+  
+  .admin-delete .color-option .circles .circle {
+    height: 18px;
+    width: 18px;
+    background: #0071C7;
+    border-radius: 50%;
+    margin: 0 4px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+  }
+  
+  .admin-delete .color-option .circles .circle.blue.active {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0071C7;
+  }
+  
+  .admin-delete .color-option .circles .circle.pink {
+    background: #FA1795;
+  }
+  
+  .admin-delete .color-option .circles .circle.pink.active {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #FA1795;
+  }
+  
+  .admin-delete .color-option .circles .circle.yellow {
+    background: #F5DA00;
+  }
+  
+  .admin-delete .color-option .circles .circle.yellow.active {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #F5DA00;
+  }
+  
+  .admin-delete .color-price .price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  .admin-delete .color-price .price .price_num {
+    font-size: 25px;
+    font-weight: 600;
+    color: #707070;
+  }
+  
+  .admin-delete .color-price .price .price_letter {
+    font-size: 10px;
+    font-weight: 600;
+    margin-top: -4px;
+    color: #707070;
+  }
+  
+  .admin-delete .product-card {
+    position: relative;
+    max-width: 320px;
+    height: 380px;
+    width: 100%;
+    border-radius: 25px;
+    padding: 35px 30px 15px 30px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+    margin: 10px;
+  }
+  
+  .admin-delete .col {
+    padding: 50px;
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-auto-rows: repeat(auto-fill, minmax(320px, 1fr));
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+  }
+  
+  .admin-delete .product-card button {
+    padding: 2px 14px;
+    outline: none;
+    border: none;
+    background: #d42b3f;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.1);
+    margin-left: -4px;
+    margin-top: 3px;
+    transition: 0.5s;
+  }
+  
+  .admin-delete .product-card button:hover {
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+  }
+  
+  .admin-delete .product-card button a {
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: 500;
+    color: #fff;
+  }
+  

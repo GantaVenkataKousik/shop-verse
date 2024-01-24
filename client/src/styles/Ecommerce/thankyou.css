@@ -1,0 +1,31 @@
+.thankyou .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    font-size: 1.5rem;
+}
+
+.thankyou h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.thankyou footer {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.thankyou footer p {
+    font-size: 1.2rem;
+}
+
+.thankyou footer span {
+    padding: 3px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}

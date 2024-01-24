@@ -1,0 +1,17 @@
+
+footer {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    font-size: 19px;
+    font-weight: 500;
+  }
+  
+  footer span {
+    color: white;
+    padding: 3px;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+  }
