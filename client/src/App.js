@@ -25,6 +25,7 @@ function App () {
   return (
     <>
       <Routes>
+        <Route path="/" exact element={<Login />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/ecommerce" element={<Ecommerce />} />
