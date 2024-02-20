@@ -32,7 +32,7 @@ dotenv.config();
 //database Config
 connectDB();
 
-app.get('/hello', (req, res) => {
+app.get('/', (req, res) => {
     res.json({ message: "hellooo chapri..." });
 })
 
