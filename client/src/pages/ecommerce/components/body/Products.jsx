@@ -12,7 +12,7 @@ function Products () {
 
   const fetchData = async () => {
     try {
-      const response = await fetch(`https://gvk-ecommerce-api.vercel.app/api/v2/ecommerce/fetchProducts`);
+      const response = await fetch(`https://gvk-ecommerce-api.onrender.com/api/v2/ecommerce/fetchProducts`);
       
       const data = await response.json();
       if (data.success === true) {

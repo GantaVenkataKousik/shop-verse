@@ -35,7 +35,7 @@ export default function Register() {
     e.preventDefault();
     try{
         const res = await axios.post(
-          `https://gvk-ecommerce-api.vercel.app/api/v1/auth/register`,
+          `https://gvk-ecommerce-api.onrender.com/api/v1/auth/register`,
           {name,email,password}
         )
         if(res && res.data.success){

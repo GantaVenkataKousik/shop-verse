@@ -15,7 +15,7 @@ export default function Cart() {
     const [products, setProducts] = useState([]);
 
     const checkout = async () => {
-        const res = await axios.post('https://gvk-ecommerce-api.vercel.app/api/v2/ecommerce/cart/checkout', { user: user });
+        const res = await axios.post('https://gvk-ecommerce-api.onrender.com/api/v2/ecommerce/cart/checkout', { user: user });
         console.log(res);
         if (res.data.success === true) {
 
