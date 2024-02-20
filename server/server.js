@@ -32,6 +32,10 @@ dotenv.config();
 //database Config
 connectDB();
 
+app.get('/hello', (req, res) => {
+    res.json({ message: "hellooo chapri..." });
+})
+
 app.use("/api/v1/auth",authRoute); 
 
 app.use("/api/v2/ecommerce",ecommerceRoute);
