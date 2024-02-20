@@ -25,7 +25,13 @@ app.use(express.json());
 app.use(morgan('dev'));
 app.use(express.urlencoded({extended: true}));
 
-
+app.use(cors(
+    {
+        origin: ["https://gvk-ecommerce.vercel.app"],
+        methods: ["GET", "POST"],
+        credentials: true
+    }
+));
 
 dotenv.config();
 
