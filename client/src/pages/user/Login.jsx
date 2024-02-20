@@ -23,7 +23,7 @@ function Login() {
     e.preventDefault();
     try {
       const res = await axios.post(
-        `http://localhost:9002/api/v1/auth/login`,
+        `https://gvk-ecommerce-api.vercel.app/api/v1/auth/login`,
         { email, password }
       )
       console.log(res);
