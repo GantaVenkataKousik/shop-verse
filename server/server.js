@@ -9,10 +9,8 @@ import connectDB from './config/db.js';
 import authRoute from './routes/authRoute.js';
 import ecommerceRoute from './routes/ecommerceRoute.js';
 import adminRoute from './routes/adminRoute.js';
-
-const PORT = 9002
-
-const MODE = "development"
+import productSchema from "./models/productSchema.js";
+import data from './data/allproducts.js';
 
 
 //intailising expresss
@@ -28,6 +26,7 @@ app.use(morgan('dev'));
 app.use(express.urlencoded({extended: true}));
 
 
+
 dotenv.config();
 
 //database Config
@@ -41,6 +40,6 @@ app.use("/api/v3/admin",adminRoute);
 
 
 
-app.listen(PORT,() => {
-    console.log(`Server running on ${MODE} Mode on the Port ${PORT}`.bgBlue);
+app.listen(process.env.PORT, () => {
+    console.log(`Server running on ${process.env.MODE} Mode on the Port ${process.env.PORT}`.bgBlue);
 })

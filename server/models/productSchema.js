@@ -4,7 +4,7 @@ import mongoose from "mongoose"
 const allproductSchema = new mongoose.Schema({
     name: String,
     producerid: String,
-    producername: String,
+    productname: String,
     imgUrl: String,
     info: String,
     price: Number,
